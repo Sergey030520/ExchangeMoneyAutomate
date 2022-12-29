@@ -9,9 +9,8 @@
 
 ## Оглавление
 1. [<p style='font-size: 20px'>Описание проекта</p>](#description_project)
-2. [<p style='font-size: 20px'>Инструкция по подключению библиотек</p>](#description_project)
-3. [<p style='font-size: 20px'>Сборка проекта и тестирование</p>](#build_and_testing_project)
-4. [<p style='font-size: 20px'>Инструкция по сборке проекта</p>](#manual_build_project)
+2. [<p style='font-size: 20px'>Сборка проекта и тестирование</p>](#build_and_testing_project)
+3. [<p style='font-size: 20px'>Инструкция по сборке проекта</p>](#manual_build_project)
 ## Описание программы<a name="description_project"></a>
 
 Необходимо реализовать на языке Си автомат и произвести моделирование при помощи [SimInTech](https://simintech.ru/), примера, приведенного в
