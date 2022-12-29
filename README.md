@@ -30,7 +30,7 @@
 ## Инструкция по сборке проекта <a name="manual_build_project"></a>
 
 Сборка проекта производится в программе SimInTech с помощью файла [exchange_money_automate_model.prt](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/exchange_money_automate_model.prt)
-Для генерации кода в начале требуется настроить параметры в разделе "Кодогенератор Си" ![win settings project](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/ImageProject/win_settings_project.png).<br>
+Для генерации кода в начале требуется настроить параметры в разделе "Кодогенератор Си". ![win settings project](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/ImageProject/win_settings_project.png)<br>
 При нажатии на данный раздел появиться окно настроек "кодогенератора си" в котором необходимо прописать путь до папки ["generate"](https://github.com/Sergey030520/ExchangeMoneyAutomate/tree/master/ExchangeMoneyEngineCode/generate), 
 а также указать компилятор для генерации кода. ![win settings code generate c](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/ImageProject/win_settings_code_generator_c.png) <br>
 После этого требуется перейти в раздел инструменты и нажать на пункт "Сгенерировать программу". ![tools generate code](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/ImageProject/tools_generate_code.png) <br>
