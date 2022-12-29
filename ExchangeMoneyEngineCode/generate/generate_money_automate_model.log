@@ -1,0 +1,36 @@
+MinGW_DLL\compile.bat "C:\SimInTech64\Projects\ExchangeMoneyAutomate\ExchangeMoneyEngineCode\generate\generate_money_automate_model"
+
+C:\SimInTech64\bin\CodeTemplates\MinGW_DLL>REM Установка путей для компилятора MinGW (GCC) 
+
+C:\SimInTech64\bin\CodeTemplates\MinGW_DLL>del /q bin\*.* 
+
+C:\SimInTech64\bin\CodeTemplates\MinGW_DLL>REM Установка архитектуры сборки модуля в зависимости от разрядности загрузчика 
+
+C:\SimInTech64\bin\CodeTemplates\MinGW_DLL>IF "64" == "64" (
+set path=..\..\..\mingw64\bin\  
+ gcc -shared -o bin\example_cpp.dll -m64 -s src\example.c src\example.def -Wl,--add-stdcall-alias -fpic -fpack-struct=1 -Wconversion 
+) 
+In file included from src\prog.h:79,
+                 from src\example.c:18:
+C:/SimInTech64/Projects/ExchangeMoneyAutomate/ExchangeMoneyEngineCode/exchange_automate.c: In function 'exchange_money':
+C:/SimInTech64/Projects/ExchangeMoneyAutomate/ExchangeMoneyEngineCode/exchange_automate.c:8:34: warning: conversion to 'unsigned int' from 'int' may change the sign of the result [-Wsign-conversion]
+    8 |     int current_value = inSymbol + automateTransfer->state;
+      |                                  ^
+C:/SimInTech64/Projects/ExchangeMoneyAutomate/ExchangeMoneyEngineCode/exchange_automate.c:8:25: warning: conversion to 'int' from 'unsigned int' may change the sign of the result [-Wsign-conversion]
+    8 |     int current_value = inSymbol + automateTransfer->state;
+      |                         ^~~~~~~~
+In file included from src\example.c:5:
+src\prog.inc: In function 'RUN_FUNC':
+src\prog.inc:77:23: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+   77 | if(isfinite(state_vars->generate_money_automate_modelv1_out_0_)){
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+C:\SimInTech64\bin\CodeTemplates\MinGW_DLL>IF "64" == "32" (
+set path=..\..\..\MinGW\bin\  
+ gcc -shared -o bin\example_cpp.dll -s src\example.c src\example.def -Wl,--add-stdcall-alias -fpic -fpack-struct=1 -Wconversion 
+) 
+
+C:\SimInTech64\bin\CodeTemplates\MinGW_DLL>if 0 == 9009 (
+ 
+ start ..\..\..\doc\compilerswarn.htm 
+) 
