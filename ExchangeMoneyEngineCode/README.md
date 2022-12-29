@@ -14,18 +14,14 @@
 4. [<p style='font-size: 20px'>Инструкция по сборке проекта</p>](#manual_build_project)
 ## Описание программы<a name="description_project"></a>
 
-Необходимо реализовать на языке Си автомат и произвести моделирование при помощи SimInTech, примера, приведенного в
+Необходимо реализовать на языке Си автомат и произвести моделирование при помощи [SimInTech](https://simintech.ru/), примера, приведенного в
 лекции – «автомат размена монет». В качестве сигнала прихода той или иной монеты
 используются кнопки, а результат выдачи разменных монет представляется в виде
 графика.
 
-## Инструкция по подключению библиотек <a name="manual_connect_library"></a>
-
-В проекте уже сгенерирован файл конфигурации:
-1.  [CMakeLists.txt](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/ExchangeMoneyEngineCode/CMakeLists.txt) — основной файл конфигурации;
-
 ## Сборка проекта и тестирование <a name="build_and_testing_project"></a>
-Данный проект был собран и протестирован с помощью таких компилятора [MSVC 2019](https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes).
+Данный проект был собран и протестирован с помощью компилятора [MSVC 2019](https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes) 
+и среды моделирования [SimInTech](https://simintech.ru/).
 Программа разработана на языке C 90 стандарта и
 поддерживает следующие операционные системы:
 + Windows 10
@@ -33,8 +29,11 @@
 
 ## Инструкция по сборке проекта <a name="manual_build_project"></a>
 
-Сборка проекта производится с помощью инструмента [CMake](https://cmake.org/). В терминале компьютера необходимо прописать следующие команды:
+Сборка проекта производится в программе SimInTech с помощью файла [exchange_money_automate_model.prt](https://github.com/Sergey030520/ExchangeMoneyAutomate/blob/master/exchange_money_automate_model.prt)
+Для генерации кода в начале требуется настроить параметры в разделе "Кодогенератор Си" ![win settings project]().<br>
+При нажатии на данный раздел появиться окно настроек "кодогенератора си" в котором необходимо прописать путь до папки ["generate"](https://github.com/Sergey030520/ExchangeMoneyAutomate/tree/master/ExchangeMoneyEngineCode/generate), 
+а также указать компилятор для генерации кода. ![win settings code generate c]() <br>
+После этого требуется перейти в раздел инструменты и нажать на пункт "Сгенерировать программу". ![tools generate code]() <br>
 
-```
-cmake --build . --config Release --target main
-```
+
+
